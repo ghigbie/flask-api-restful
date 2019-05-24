@@ -9,15 +9,15 @@ items = []
 class Item(Resource):
     def get(self, name):
         for item in items:
-            if name == item.name:
+            if item['name'] == name:
                 return item
-            else:
-                return 'Item does not exist'
+        return {'item': None}, 404
 
     def post(self, name):
         item = {'name': name, 'price': 12.00}
         items.append(item)
+        return item
 
 api.add_resource(Item, '/item/<string:name>')
 
-app.run(port=5000)
+app.run(port=5000, debug=True)
