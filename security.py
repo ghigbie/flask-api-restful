@@ -7,13 +7,15 @@ users = [
 ]
 
 username_mapping = { 'bob' : {
-    'id': 1,
-    'username': 'bob',
-    'password': 'asdf'
-}}
+        'id': 1,
+        'username': 'bob',
+        'password': 'asdf'
+    }
+}
 
 userid_mapping = { 1: {
-    'id': 1,
-    'username': 'bob',
-    'password': 'asdf'
-}}
+        'id': 1,
+        'username': 'bob',
+        'password': 'asdf'
+    }
+}
